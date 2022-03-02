@@ -12,13 +12,13 @@ const Navbar: FC = () => {
     <Container>
       <div className={s.root}>
         <div className="flex flex-1 items-center">
-          <Link href="/">
+         
         
-            <Image src = '/Aretha.svg' alt= 'Aretha' width={200} height={85} />
+            <Image src = '/Aretha.svg' alt= 'Aretha' width={150} height={100} layout="fixed"/>
 
        
-
-          </Link>
+          
+         
           <nav className="ml-6 space-x-6">
             <Link href="/">
               <a className={s.link}>Canastas</a>
@@ -31,6 +31,7 @@ const Navbar: FC = () => {
             </Link>
             
           </nav>
+
           <div className="flex flex-1 justify-end space-x-8">
             <Usernav />
           </div>
