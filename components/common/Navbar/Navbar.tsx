@@ -14,7 +14,7 @@ const Navbar: FC = () => {
         <div className="flex flex-1 items-center">
           <Link href="/">
         
-            <Image src = '/Aretha.svg' alt= 'Aretha' width={200} height={50} />
+            <Image src = '/Aretha.svg' alt= 'Aretha' width={200} height={85} />
 
        
 
