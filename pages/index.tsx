@@ -21,7 +21,8 @@ export async function getStaticProps() {
 export default function Home({
   products
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-
+  console.log('product')
+  console.log(products)
   return (
     <>
       <Grid>

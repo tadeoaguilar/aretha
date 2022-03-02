@@ -8,6 +8,8 @@ const fetchApi = async <T>({
   query,
   variables }: ApiFetcherOptions
 ): Promise<ApiFetcherResults<T>> => {
+  console.log('api')
+  console.log(API_URL)
   const res = await fetch(API_URL!, {
     method: "POST",
     headers: {

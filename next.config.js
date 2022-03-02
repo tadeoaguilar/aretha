@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 const { withFrameworkConfig } = require("./framework/common/config")
 
 module.exports = withFrameworkConfig({

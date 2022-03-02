@@ -65,14 +65,16 @@ const normalizeLineItem = ({
   }
 }
 
-const normalizeProductImages = ({edges}: {edges: Array<ImageEdge>}) =>
-  edges.map(({node: { originalSrc: url, ...rest}}) => ({
+const normalizeProductImages = ({edges}: {edges: Array<ImageEdge>}) => {
+  console.log('edges')
+  console.log(edges)
+  return   edges.map(({node: { originalSrc: url, ...rest}}) => ({
     url: process.env.NEXT_PUBLIC_FRAMEWORK === "shopify_local" ?
     `/images/${url}` :
     url ?? "/product-image-placeholder.svg",
     ...rest }
   ))
-
+}
 const normalizeProductPrice = ({currencyCode, amount}: MoneyV2) => ({
   value: +amount,
   currencyCode
@@ -144,7 +146,8 @@ export function normalizeProduct(productNode: ShopifyProduct): Product {
     variants,
     ...rest
   } = productNode
-
+  console.log('Node')
+  console.log(imageConnection)
   const product = {
     id,
     name,

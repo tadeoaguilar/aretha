@@ -9,6 +9,7 @@ const ALLOWED_FW = ["shopify", "bigcommerce", "shopify_local"]
 const FALLBACK_FW = "shopify"
 
 function withFrameworkConfig(defaultConfig = {}) {
+  console.log(defaultConfig)
   let framework = defaultConfig?.framework?.name
 
   if (!framework) {
