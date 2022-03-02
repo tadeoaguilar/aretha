@@ -27,10 +27,10 @@ const Navbar: FC = () => {
               <a className={s.link}>Regalos</a>
             </Link>
             <Link href="/">
-              <a className={s.link}>Dia del Padre</a>
+              <a className={s.link}>Padre</a>
             </Link>
             <Link href="/">
-              <a className={s.link}>Dia de la madre</a>
+              <a className={s.link}>Madre</a>
             </Link>
           </nav>
           <div className="flex flex-1 justify-end space-x-8">
